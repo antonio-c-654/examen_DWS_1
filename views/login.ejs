@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-500 flex items-center justify-center flex-col justify-around">
+
+    <nav class="flex w-full justify-between bg-blue-500">
+        <form action="/" method="get"><button type="submit" class="pl-6">Home</button></form>
+
+        <div class="pr-6 flex">
+            <form action="/login" method="get"><button type="submit">Login</button></form>
+            <span class="mx-4">|</span>
+            <form action="/register" method="get"><button type="submit">Register</button></form>
+        </div>
+    </nav>
+
+    <form action="/login" method="post" class="h-[80vh] flex flex-col items-center justify-evenly border mt-10 p-4 rounded-md">
+        <input type="text" placeholder="email" name="email">
+        <input type="text" placeholder="password" name="password">
+        <button type="submit" class="bg-blue-400 px-4 py-2 rounded-md text-white">Login</button>
+
+        <img src="/images/imagen_1.jpg" class="w-[200px]">
+    </form>
+    <form action="/recuperar" method="get">
+        <button type="submit" class="underline text-blue-900">Olvidaste tu contraseña?</button>
+    </form>
+    
+
+    <footer class="absolute bottom-0 bg-blue-500 w-full underline text-blue-900 text-center"><a href="http://google.com">politica de cookies</a></footer>
+
+</body>
+</html>
